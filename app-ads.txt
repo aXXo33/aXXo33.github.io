@@ -1,1 +1,5 @@
+# app-ads.txt for Prime Quantum Studios
+# AdMob publisher: pub-2623212649320264
+# Format: https://iabtechlab.com/wp-content/uploads/2018/02/app-ads.txt-v1.0-FINAL.pdf
+
 google.com, pub-2623212649320264, DIRECT, f08c47fec0942fa0
