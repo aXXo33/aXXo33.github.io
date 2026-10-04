@@ -35,10 +35,10 @@
   <div class="nav"><a href="../../">Prime Quantum Studios</a><a href="../support/">Arena Hoops Support</a></div>
   <div class="brand">Arena Hoops</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 4 October 2026 &nbsp;&middot;&nbsp; Last updated: 4 October 2026</p>
+  <p class="meta">Effective date: 4 October 2026 &nbsp;&middot;&nbsp; Last updated: 4 October 2026 (services added before release)</p>
 
   <div class="callout">
-    <strong>Short version.</strong> Arena Hoops has no accounts and never asks for your name, email or contacts. Your progress stays on your device. The game shows ads between matches through Google AdMob, so Google processes some data about your device and how ads are seen. There are no in-app purchases, no analytics service and no crash-reporting service in the game.
+    <strong>Short version.</strong> Arena Hoops has no accounts and never asks for your name, email or contacts. Your progress stays on your device. The game shows ads between matches and optional rewarded ads through Google AdMob (with Unity Ads competing inside AdMob), and offers one optional one-time purchase, Remove Ads, handled by your app store and RevenueCat. Gameplay statistics and crash reports (Google Firebase) are <strong>off</strong> until you choose ALLOW.
   </div>
 
   <h2>1. Who we are</h2>
@@ -46,60 +46,86 @@
   <p>Privacy questions and requests, support requests, and data access or deletion inquiries: <a href="mailto:primequantumstudios@gmail.com">primequantumstudios@gmail.com</a>.</p>
 
   <h2>2. What the game itself keeps on your device</h2>
-  <p>Your career progress and stars, coins, fans, the balls and training you have unlocked, daily gift and mission progress, and your sound and vibration settings are stored only on your device. We do not receive them. Uninstalling removes them from the device, although a device or cloud backup that you have switched on may keep a copy.</p>
+  <p>Your career progress and stars, coins, fans, the balls and training you have unlocked, daily gift and mission progress, your sound, vibration and statistics settings, and the cached Remove Ads status are stored only on your device. We do not receive them. Uninstalling removes them from the device, although a device or cloud backup that you have switched on may keep a copy.</p>
 
-  <h2>3. The one service that processes data, and what it receives</h2>
-  <p>We do not sell your data. The advertising partner below acts for us to show ads and also for its own advertising, measurement and fraud-prevention purposes. Please review its own policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  <h2>3. Services that process data, and what they receive</h2>
+  <p>We do not sell your data. The services below act as our service providers or, for the advertising partners, also for their own advertising, measurement and fraud-prevention purposes. Please review their own policies (Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>; Unity: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal</a>; RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>).</p>
   <table>
     <tr><th>Service</th><th>Data involved</th><th>Why</th></tr>
     <tr>
       <td><strong>Google Mobile Ads (AdMob)</strong>, Google LLC, together with <strong>Google's User Messaging Platform (UMP)</strong> for consent</td>
       <td>IP address (which may be used to estimate your general location), the device advertising identifier and app set ID, account-related identifiers on the device where applicable, app launches, taps and ad views, and diagnostic information such as app launch time, hang rate and energy use. Your consent choices are stored on the device by UMP.</td>
-      <td>Showing occasional full-screen ads between matches, measuring and limiting ads, preventing fraud, and Google's own advertising and analytics purposes</td>
+      <td>Showing occasional full-screen ads between matches and optional rewarded ads, measuring and limiting ads, preventing fraud, and Google's own advertising and analytics purposes</td>
+    </tr>
+    <tr>
+      <td><strong>Unity Ads</strong>, Unity Technologies, as an ad partner inside Google AdMob mediation</td>
+      <td>Approximate location, device and advertising identifiers, identifiers Unity assigns, ad interactions, diagnostics, and device details such as language, make, model and connection type, as described in Unity's own disclosures</td>
+      <td>Competing to show ads through AdMob, ad measurement, analytics and fraud prevention; Unity also uses this data as described in its own policies</td>
+    </tr>
+    <tr>
+      <td><strong>Google Firebase Analytics</strong> &mdash; only after you choose ALLOW</td>
+      <td>A random app-instance ID, gameplay events with numbers only (match number, win or loss, score, stars, shots, ads watched, purchase made), screen views and sessions, device model, operating system version, and coarse location derived from a masked IP address</td>
+      <td>Balancing matches and understanding which parts of the game are played. Not used for ads: its advertising consent signals are kept denied.</td>
+    </tr>
+    <tr>
+      <td><strong>Google Firebase Crashlytics</strong> &mdash; only after you choose ALLOW</td>
+      <td>Crash stack traces, app state and device details at the time of a crash, and a random installation ID</td>
+      <td>Finding and fixing crashes</td>
+    </tr>
+    <tr>
+      <td><strong>RevenueCat</strong>, together with the app store you downloaded the game from</td>
+      <td>A random anonymous customer ID, purchase history and store receipt data for this app, locale and currency code</td>
+      <td>Validating and restoring the Remove Ads purchase</td>
     </tr>
   </table>
-  <p>This list follows Google's own description of what its ads SDK collects automatically. The data is sent over encrypted (TLS) connections.</p>
+  <p>Payment card and bank details are handled only by your app store. We never see them.</p>
+  <p>The advertising rows follow the providers' own descriptions of what their SDKs collect. All of this data is sent over encrypted (TLS) connections.</p>
 
   <h2>4. Categories of data, in plain terms</h2>
   <ul>
-    <li><strong>Approximate location</strong> — inferred from your IP address by the advertising partner. The game never requests GPS or precise location.</li>
-    <li><strong>App interactions</strong> — app launches, taps and ad views, as seen by the advertising partner.</li>
-    <li><strong>Diagnostics</strong> — ad SDK performance information such as launch time, hang rate and energy use.</li>
-    <li><strong>Device identifiers</strong> — the advertising identifier and app set ID.</li>
+    <li><strong>Approximate location</strong> — inferred from your IP address by the advertising partners and (after ALLOW) Firebase. The game never requests GPS or precise location.</li>
+    <li><strong>App interactions</strong> — app launches, taps and ad views (advertising partners), and gameplay events (Firebase, after ALLOW).</li>
+    <li><strong>Diagnostics</strong> — ad SDK performance information such as launch time, hang rate and energy use, and (after ALLOW) crash reports.</li>
+    <li><strong>Purchase history</strong> &mdash; only if you buy or restore Remove Ads. Every match can be played without paying.</li>
+    <li><strong>Device or other identifiers</strong> — the advertising identifier and app set ID, and random per-installation identifiers used by Firebase and RevenueCat.</li>
   </ul>
-  <p>We do not collect your name, email address, phone number, contacts, photos, files, calendar, microphone, camera, precise location, purchase history or browsing history outside the game. The game has no chat and no free-text input.</p>
+  <p>We do not collect your name, email address, phone number, contacts, photos, files, calendar, microphone, camera, precise location or browsing history outside the game. The game has no chat and no free-text input, and its statistics accept only a fixed list of events with numbers, so personal details cannot be logged by mistake.</p>
 
-  <h2>5. Consent and how ads are personalised</h2>
+  <h2>5. Your statistics choice, and why ads are separate</h2>
+  <p>Firebase Analytics and Crashlytics are <strong>switched off on a clean install</strong>. After your first win the game asks once, with equal <strong>ALLOW</strong> and <strong>NOT NOW</strong> buttons. Nothing is collected before you allow it. You can change your mind any time with <strong>STATS</strong> on the main screen. Turning it off stops statistics right away; Google documents that switching crash reporting off may only take effect from the next launch. This switch controls Firebase only &mdash; it does not stop advertising data processing, which follows your ad choices below.</p>
+
+  <h2>6. Consent and how ads are personalised</h2>
   <ul>
     <li><strong>Consent (EEA, UK, Switzerland and other regulated regions):</strong> Google's User Messaging Platform asks for your choices before ads are requested. Where this applies, you can review or change your choices at any time with <strong>PRIVACY CHOICES</strong> on the game's main screen.</li>
     <li><strong>US states with privacy laws:</strong> where Google's tools show an opt-out of the "sale" or "sharing" of personal information for targeted advertising, it is available through the same choices.</li>
     <li><strong>Device settings:</strong> you can reset or delete your advertising identifier or opt out of ad personalisation in your device's privacy settings.</li>
-    <li>Ads only appear between matches, never during play, and their content is limited to a PG maximum rating. The game is not directed at children.</li>
+    <li>Ads only appear between matches, never during play, and their content is limited to a PG maximum rating. Rewarded ads are always optional. Buying Remove Ads stops the ads between matches. The game is not directed at children.</li>
   </ul>
 
-  <h2>6. Retention and security</h2>
-  <p>Data on your device stays until you delete it or uninstall the game (subject to your own backups). Data held by the advertising partner is kept under its own retention rules. We keep no servers and no database of our own for this game.</p>
+  <h2>7. Retention and security</h2>
+  <p>Data on your device stays until you delete it or uninstall the game (subject to your own backups). Data held by the services in section 3 is kept under their own retention rules and settings. We keep no servers and no database of our own for this game.</p>
 
-  <h2>7. Children's privacy</h2>
+  <h2>8. Children's privacy</h2>
   <p>Arena Hoops is intended for a general audience aged 13 and over and is not directed at children. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through the game, contact us and we will take appropriate steps.</p>
 
-  <h2>8. International transfers</h2>
-  <p>Google LLC is based in the United States and may process data in the United States and other countries under its own safeguards and transfer mechanisms.</p>
+  <h2>9. International transfers</h2>
+  <p>The services in section 3 are operated by companies based in the United States and may process data in the United States and other countries, under their own safeguards and transfer mechanisms.</p>
 
-  <h2>9. Your rights and choices</h2>
+  <h2>10. Your rights and choices</h2>
   <p>Depending on where you live, you may have rights to access, correct, delete or port personal data, to object to or restrict processing, or to opt out of targeted advertising, under laws such as the UK GDPR, the EU GDPR and US state privacy laws. What you can do in practice:</p>
   <ul>
     <li>Change or withdraw ad consent: <strong>PRIVACY CHOICES</strong> on the main screen (shown where it applies).</li>
+    <li>Stop gameplay statistics and crash reports: <strong>STATS</strong> on the main screen.</li>
     <li>Reset or delete your advertising identifier, or limit ad personalisation, in your device settings.</li>
     <li>Delete local game data by clearing the app's data or uninstalling.</li>
     <li>Contact us at <a href="mailto:primequantumstudios@gmail.com">primequantumstudios@gmail.com</a> for privacy questions, support or a data access or deletion inquiry.</li>
   </ul>
-  <p><strong>What we can and cannot delete.</strong> Arena Hoops has no accounts, no login and no in-app deletion feature, and we hold no data about you ourselves. Ad data is held by Google; we can tell you how to use Google's own controls and will forward a request where Google's process allows it, but we cannot promise deletion on Google's behalf.</p>
+  <p><strong>What we can and cannot delete.</strong> Arena Hoops has no accounts, no login and no in-app deletion feature, we keep no database of our own, and the game does not show the random identifiers the services use. We usually cannot connect a request to one installation and cannot promise deletion on a provider's behalf; we will tell you which provider holds what and forward a request where its process allows. Purchase records are held by your app store and are also kept for its tax and accounting obligations.</p>
 
-  <h2>10. Changes to this policy</h2>
+  <h2>11. Changes to this policy</h2>
   <p>We may update this policy, for example if the game adds a service. The "Last updated" date above will change with it, and significant changes will be reflected in the game's store listing.</p>
 
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p>
     Prime Quantum Studios &mdash; independent game developer, London, United Kingdom<br>
     Privacy questions and requests, support requests, data access or deletion inquiries:
