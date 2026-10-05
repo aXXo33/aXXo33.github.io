@@ -35,10 +35,10 @@
   <div class="nav"><a href="../../">Prime Quantum Studios</a><a href="../support/">Tidy Harbor Support</a></div>
   <div class="brand">Tidy Harbor</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 1 October 2026 &nbsp;&middot;&nbsp; Last updated: 1 October 2026</p>
+  <p class="meta">Effective date: 1 October 2026 &nbsp;&middot;&nbsp; Last updated: 5 October 2026</p>
 
   <div class="callout">
-    <strong>Short version.</strong> Tidy Harbor has no accounts and never asks for your name, email or contacts. Your progress stays on your device. The game shows ads and offers one optional one-time purchase, so an advertising partner, an in-app purchase service and (only if you allow it) Google Firebase process some data about your device and how you use the game. Gameplay statistics and crash reports are <strong>off</strong> until you choose ALLOW. Advertising works separately from that choice.
+    <strong>Short version.</strong> Tidy Harbor has no accounts and never asks for your name, email or contacts. Your progress stays on your device. The game shows ads through Google AdMob (with Unity Ads competing inside AdMob) and offers optional purchases (Remove Ads and coin packs), so advertising partners, an in-app purchase service and (only if you allow it) Google Firebase process some data about your device and how you use the game. Gameplay statistics and crash reports are <strong>off</strong> until you choose ALLOW. Advertising works separately from that choice.
   </div>
 
   <h2>1. Who we are</h2>
@@ -49,13 +49,18 @@
   <p>Your level, coins, stars, boosters, restored areas, settings, the cached Remove Ads entitlement and your gameplay-statistics choice are stored only on your device. Uninstalling removes them from the device, although a device or cloud backup that you have switched on may keep a copy.</p>
 
   <h2>3. Services that process data, and what they receive</h2>
-  <p>We do not sell your data. The services below act either as our service providers or, in the case of the advertising partner, also for their own advertising, measurement and fraud-prevention purposes. Please review their own policies.</p>
+  <p>We do not sell your data. The services below act as our service providers or, for the advertising partners, also for their own advertising, measurement and fraud-prevention purposes. Please review their own policies (Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>; Unity: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal</a>; RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>).</p>
   <table>
     <tr><th>Service</th><th>Data involved</th><th>Why</th></tr>
     <tr>
       <td><strong>Google Mobile Ads (AdMob)</strong>, Google LLC, together with <strong>Google's User Messaging Platform (UMP)</strong> for consent</td>
-      <td>IP address (used to estimate approximate, general location), the device advertising identifier and app set ID, identifiers related to signed-in accounts on the device where applicable, app launches, taps, ad views and clicks, and diagnostic information such as launch time, hang rate and energy use. Your consent choices are stored on the device by UMP.</td>
+      <td>IP address (used to estimate approximate, general location), the device advertising identifier and other device identifiers provided by the operating system, identifiers related to signed-in accounts on the device where applicable, app launches, taps, ad views and clicks, and diagnostic information such as launch time, hang rate and energy use. Your consent choices are stored on the device by UMP.</td>
       <td>Showing optional rewarded ads and occasional interstitial ads, measuring and limiting ads, preventing fraud, and Google's own advertising and analytics purposes</td>
+    </tr>
+    <tr>
+      <td><strong>Unity Ads</strong>, Unity Technologies, as an ad partner inside Google AdMob mediation</td>
+      <td>Approximate location, device and advertising identifiers, identifiers Unity assigns, ad interactions, diagnostics, and device details such as language, make, model and connection type, as described in Unity's own disclosures</td>
+      <td>Competing to show ads through AdMob, ad measurement, analytics and fraud prevention; Unity also uses this data as described in its own policies</td>
     </tr>
     <tr>
       <td><strong>Google Firebase Analytics</strong> — only after you choose ALLOW</td>
@@ -75,18 +80,18 @@
     <tr>
       <td><strong>RevenueCat</strong>, together with the app store you downloaded the game from</td>
       <td>A random anonymous customer ID, purchase history and store receipt data for this app, locale and currency code</td>
-      <td>Validating and restoring your purchase, unlocking Remove Ads, and purchase statistics</td>
+      <td>Validating and restoring purchases, unlocking Remove Ads, delivering coin packs, and purchase statistics</td>
     </tr>
   </table>
   <p>Payment card and bank details are handled only by your app store. We never see them.</p>
 
   <h2>4. Categories of data, in plain terms</h2>
   <ul>
-    <li><strong>Approximate location</strong> — inferred from your IP address by the advertising partner, Firebase and Remote Config. We never request GPS or precise location.</li>
+    <li><strong>Approximate location</strong> — inferred from your IP address by the advertising partners, Firebase and Remote Config. We never request GPS or precise location.</li>
     <li><strong>App interactions</strong> — app launches, taps, ad views and clicks, screens and sessions.</li>
     <li><strong>Diagnostics</strong> — performance and stability information such as launch time, hang rate, energy use, and (after ALLOW) crash reports.</li>
-    <li><strong>Purchase history</strong> — only if you buy or restore the purchase. Every level can be finished without paying.</li>
-    <li><strong>Device or other identifiers</strong> — the advertising identifier, app set ID, and random per-installation identifiers used by Firebase and RevenueCat.</li>
+    <li><strong>Purchase history</strong> — only if you buy or restore a purchase. Every level can be finished without paying.</li>
+    <li><strong>Device or other identifiers</strong> — the advertising identifier, other device identifiers provided by the operating system, identifiers the advertising partners assign, and random per-installation identifiers used by Firebase and RevenueCat.</li>
   </ul>
   <p>We do not collect your name, email address, phone number, contacts, photos, files, calendar, microphone, camera, precise location, browsing history outside the game, or any free-text you type. The game's analytics system only accepts a fixed list of event names and values, so personal details cannot be logged by accident.</p>
 
@@ -95,7 +100,7 @@
   <ul>
     <li>Turning it off stops analytics collection right away.</li>
     <li>For crash reporting, Google documents that switching collection off may only take effect from the next time you launch the app, and that crash information recorded while collection is off is stored on your device and is sent if collection is later switched on. The Firebase SDK we use offers no way for the game to delete those stored reports, so we do not claim to delete them.</li>
-    <li>This switch controls Firebase only. <strong>It does not stop advertising data processing.</strong> While ads are shown, the advertising partner keeps processing the data in section 3 to deliver, measure and protect ads, using non-personalised or limited ads where your consent or tracking choices require it.</li>
+    <li>This switch controls Firebase only. <strong>It does not stop advertising data processing.</strong> While ads are shown, the advertising partners keep processing the data in section 3 to deliver, measure and protect ads, using non-personalised or limited ads where your consent or tracking choices require it.</li>
   </ul>
 
   <h2>6. Consent, tracking and how ads are personalised</h2>
@@ -103,7 +108,7 @@
     <li><strong>Consent (EEA, UK, Switzerland and other regulated regions):</strong> Google's User Messaging Platform asks for your choices before ads are requested. You can review or change them at any time in <strong>Settings → PRIVACY CHOICES</strong>. In regions where a consent form is not required, the screen says so.</li>
     <li><strong>Tracking permission:</strong> where the operating system asks whether the game may track you across apps and websites, saying no means the advertising identifier is not used for tracking; ads still appear, but non-personalised or limited.</li>
     <li><strong>Device settings:</strong> you can reset or delete your advertising identifier, refuse tracking, or opt out of ad personalisation in your device's privacy settings.</li>
-    <li>Ad content is limited to a PG maximum rating, and the game is not directed at children.</li>
+    <li>Ad content is limited to a maximum rating of T (Teen) at Google AdMob, ads rated 17+ are blocked at Unity Ads, and the game is not directed at children.</li>
   </ul>
 
   <h2>7. Retention and security</h2>
