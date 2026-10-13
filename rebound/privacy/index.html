@@ -38,7 +38,7 @@
   <div class="nav"><a href="../../">Prime Quantum Studios</a><a href="../support/">REBOUND Support</a><a href="../terms/">Terms of Use</a></div>
   <div class="brand">REBOUND: One Shot Puzzle</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 17 September 2026 &nbsp;&middot;&nbsp; Last updated: 17 September 2026</p>
+  <p class="meta">Effective date: 17 September 2026 &nbsp;&middot;&nbsp; Last updated: 13 October 2026</p>
 
   <div class="callout">
     <strong>Short version.</strong> REBOUND has no accounts and never asks for your name, email or contacts. Your progress stays on your device. The game shows ads and offers two optional one-time purchases, so ad partners, an in-app purchase service and (only if you allow it) Google Firebase process some data about your device and how you use the game. Gameplay statistics and crash reports are <strong>off</strong> until you choose ALLOW. Advertising works separately from that choice.
@@ -56,14 +56,14 @@
   <table>
     <tr><th>Service</th><th>Data involved</th><th>Why</th></tr>
     <tr>
-      <td><strong>Google Mobile Ads (AdMob)</strong>, Google LLC, together with <strong>Google's User Messaging Platform (UMP)</strong> for consent</td>
-      <td>IP address (used to estimate approximate, general location), advertising ID / IDFA and app set ID, identifiers related to signed-in accounts on the device where applicable, app launches, taps, ad views and clicks, and diagnostic information such as launch time, hang rate and energy use. Your consent choices are stored on the device by UMP.</td>
-      <td>Showing optional rewarded ads and occasional interstitial ads, measuring and limiting ads, preventing fraud, and Google's own advertising and analytics purposes</td>
+      <td><strong>Unity LevelPlay</strong> (ad mediation) and <strong>ironSource Ads</strong>, Unity Technologies</td>
+      <td>IP address (used to estimate approximate, general location), advertising ID / IDFA and other device identifiers, identifiers assigned to the installation, ad views and interactions inside the ad, app diagnostics, and device details such as language, make, model, screen size and connection type. Your ad personalisation choice (see section 6) is passed on with each ad request.</td>
+      <td>Choosing which ad partner fills an ad request, showing optional rewarded ads and occasional interstitial ads, measuring and limiting ads, preventing fraud, and the partners' own advertising and analytics purposes as described in their policy</td>
     </tr>
     <tr>
-      <td><strong>Unity Ads</strong>, Unity Technologies, used only as a <strong>bidding source inside Google AdMob mediation</strong> (it competes to fill an ad request; REBOUND does not run Unity as its own ad mediation)</td>
+      <td><strong>Unity Ads</strong>, Unity Technologies, as an ad partner inside Unity LevelPlay</td>
       <td>Approximate location, device and advertising identifiers, identifiers Unity assigns to the installation, interactions inside the ad, app diagnostics, and device details such as language, make, model, screen size and connection type. Unity's own documentation also lists purchase-related and identifier data for its SDK.</td>
-      <td>Bidding for and delivering ads through AdMob, measurement, analytics and fraud prevention, and Unity's own purposes as described in their policy</td>
+      <td>Bidding for and delivering ads, measurement, analytics and fraud prevention, and Unity's own purposes as described in their policy</td>
     </tr>
     <tr>
       <td><strong>Google Firebase Analytics</strong> — only after you choose ALLOW</td>
@@ -113,10 +113,11 @@
 
   <h2>6. Consent, tracking and how ads are personalised</h2>
   <ul>
-    <li><strong>Consent (EEA, UK, Switzerland and other regulated regions):</strong> Google's User Messaging Platform asks for your choices before ads are requested. You can review or change them at any time in <strong>Settings → Privacy → PRIVACY CHOICES</strong>. In regions where a consent form is not required, the screen says so.</li>
+    <li><strong>Personalised ads (everyone):</strong> the game asks you once, after a completed level, whether ads may be personalised, with equally weighted <strong>ALLOW</strong> and <strong>NO THANKS</strong> buttons. Until you choose ALLOW, the ad partners are told that there is no consent, so ads are non-personalised. You can review or change your answer at any time in <strong>Settings → Privacy → PRIVACY CHOICES</strong>.</li>
     <li><strong>App Tracking Transparency (iOS):</strong> the system asks whether REBOUND may track you across apps and websites. If you say no, the advertising identifier (IDFA) is not used for tracking; ads still appear, but non-personalised or limited. You can change this in iOS Settings → Privacy &amp; Security → Tracking.</li>
     <li><strong>Android:</strong> you can reset or delete your advertising ID, or opt out of ad personalisation, in Android Settings → Privacy → Ads.</li>
-    <li>Ad content is limited to a PG maximum rating, and the game is not directed at children.</li>
+    <li>The game is not directed at children.</li>
+    <li>Versions of REBOUND before 1.0.1 used Google Mobile Ads (AdMob) and Google's consent form instead of the services above. Google's data practices for those versions are described at policies.google.com/privacy.</li>
   </ul>
 
   <h2>7. Retention and security</h2>
