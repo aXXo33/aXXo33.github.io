@@ -1,29 +1,82 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Prime Quantum Studios</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #f5f5f5; color: #333; }
-        h1 { color: #2e7d32; }
-        .app { background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        a { color: #1976d2; }
-    </style>
-      </head>
-      <body>
-          <h1>Prime Quantum Studios</h1>
-    <p>Independent game developer creating fun mobile experiences.</p>
-    <div class="app">
-        <h2>Idle Money Tree: Cash Clicker</h2>
-        <p>Grow your very own Money Tree and become the ultimate idle tycoon! Tap, upgrade, and watch your wealth grow.</p>
-        <p><a href="idle-money-tree/">App website</a></p>
-          </div>
-    <div class="app">
-        <h2>REBOUND: One Shot Puzzle</h2>
-        <p>One shot, two directions. Break blue going out and orange coming home across 90 handcrafted levels, Daily challenges and a validated Endless mode.</p>
-        <p><a href="rebound/">App website</a> &middot; <a href="rebound/privacy/">Privacy Policy</a> &middot; <a href="rebound/support/">Support</a></p>
-          </div>
-          <p>Contact: <a href="mailto:primequantumstudios@gmail.com">primequantumstudios@gmail.com</a></p>
-      </body>
-      </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Quantum Studios</title>
+  <meta name="description" content="Prime Quantum Studios is a small independent studio making casual mobile games in Unity, and small Unity tools built from them.">
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    :root { --bg:#141a36; --card:#1d2547; --line:#2c3663; --text:#eef0fa; --muted:#a9b0d0; --warm:#ffb15a; --warm2:#ff8a4c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+    .wrap { max-width:880px; margin:0 auto; padding:40px 16px 56px; }
+    header { display:flex; align-items:center; gap:18px; margin-bottom:8px; }
+    header img { width:72px; height:72px; border-radius:50%; }
+    h1 { margin:0; font-size:1.9rem; }
+    .lead { color:var(--muted); margin:6px 0 32px; max-width:640px; }
+    h2 { font-size:1.15rem; color:var(--warm); text-transform:uppercase; letter-spacing:.06em; margin:36px 0 12px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; margin:14px 0; }
+    .card h3 { margin:0 0 6px; font-size:1.15rem; }
+    .card p { margin:0 0 10px; color:var(--muted); }
+    .links a { display:inline-block; margin:4px 8px 0 0; padding:7px 13px; border-radius:999px; border:1px solid var(--line); color:var(--text); text-decoration:none; font-size:.92rem; }
+    .links a.store { background:linear-gradient(90deg,var(--warm2),var(--warm)); color:#1b1b2b; border:0; font-weight:600; }
+    .tool { display:grid; gap:16px; grid-template-columns:1fr; }
+    @media (min-width:720px) { .tool { grid-template-columns:1.1fr 1fr; align-items:center; } }
+    video, .tool img { width:100%; border-radius:10px; display:block; }
+    .tag { display:inline-block; font-size:.78rem; padding:2px 9px; border-radius:999px; background:#2c3663; color:var(--warm); margin-left:6px; vertical-align:middle; }
+    footer { margin-top:40px; color:var(--muted); font-size:.92rem; border-top:1px solid var(--line); padding-top:18px; }
+    a { color:var(--warm); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/pq-logo-192.png" alt="Prime Quantum Studios logo">
+    <div><h1>Prime Quantum Studios</h1></div>
+  </header>
+  <p class="lead">A small independent studio in the UK making casual mobile games in Unity, plus small, focused Unity tools taken from the code those games rely on.</p>
+
+  <h2>Games</h2>
+  <div class="card">
+    <h3>Tidy Harbor</h3>
+    <p>A relaxing triple-tile match puzzle: clear the tiles and restore a little harbour town, one area at a time.</p>
+    <div class="links">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.primequantumstudios.tidyharbor">Google Play</a>
+      <a href="tidy-harbor/privacy/">Privacy</a><a href="tidy-harbor/support/">Support</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>REBOUND: One Shot Puzzle</h3>
+    <p>One shot, two directions. Break blue going out and orange coming home across 90 handcrafted levels, daily challenges and an endless mode.</p>
+    <div class="links">
+      <a class="store" href="https://apps.apple.com/gb/app/rebound-one-shot-puzzle/id6813063714">App Store</a>
+      <a href="rebound/">Website</a><a href="rebound/privacy/">Privacy</a><a href="rebound/support/">Support</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Idle Money Tree: Cash Clicker</h3>
+    <p>Grow your own money tree: tap, upgrade and watch your idle empire grow, even while you are away.</p>
+    <div class="links">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.primequantumstudios.moneytree">Google Play</a>
+      <a class="store" href="https://apps.apple.com/gb/app/idle-money-tree-cash-clicker/id6806322917">App Store</a>
+      <a href="idle-money-tree/">Website</a>
+    </div>
+  </div>
+
+  <h2>Unity tools</h2>
+  <div class="card tool">
+    <video src="assets/juicy-ui-motion-preview.mp4" poster="assets/juicy-ui-motion.jpg" controls muted playsinline preload="none"></video>
+    <div>
+      <h3>Juicy UI Motion <span class="tag">Coming to the Unity Asset Store</span></h3>
+      <p>Smooth UI motion for Unity without a tween library: glides you can re-target at any time, arc flights, punch, ripples, sparkles, popups, rolling counters and a safe-area fitter. Pulled from the motion code in our own puzzle games.</p>
+    </div>
+  </div>
+
+  <footer>
+    Contact: <a href="mailto:primequantumstudios@gmail.com">primequantumstudios@gmail.com</a><br>
+    Also from us: <a href="https://calcistry.com">Calcistry</a>, free UK money calculators.
+  </footer>
+</div>
+</body>
+</html>
